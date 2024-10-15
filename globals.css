@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 10px;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #083e77;
+    color: #fff;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    background: #f0f0f0;
+    padding: 50px;
+    margin: 0 0 60px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2,
+h3 {
+    font-size: 1.75rem;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    color: #444;
+}
+
+footer a {
+    color: #006adb
+}
+
+code {
+    background: #e0e0e0;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+a {
+    color: #006adb;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #083e77;
+}
+
+#tips {
+    scroll-margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        padding: 20px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    main {
+        background: #2c2c2c;
+    }
+
+    header {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    footer {
+        color: #999;
+    }
+
+    .cta-button {
+        background-color: #106bfe;
+        color: #fff;
+    }
+
+    h2,
+    h3 {
+        color: #4d90fe;
+    }
+
+    a {
+        color: #5294fe;
+    }
+
+    footer a {
+        color: #3396ff;
+    }
+
+    code {
+        background: #3a3a3a;
+    }
+}
